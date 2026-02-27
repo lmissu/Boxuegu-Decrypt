@@ -4,9 +4,9 @@
 
 这是一个用于解密博学谷平台PCM音频文件的Java工具。通过解析特定的XML配置文件和DES加密算法，将加密的PCM文件转换为MP4视频文件。
 
-目前只能解析单个课程，会遇到com_bokecc_base_sp.xml中有多个个课程的目录的尴尬情况，默认只会解析第一个，因为懒所以暂时没修，
+目前只能解析单个课程，会遇到com_bokecc_base_sp.xml中有多个个课程的目录的尴尬情况（也就是账号下买了多个课程），默认只会解析第一个，因为懒所以暂时没修，
 
-解决方案：删除com_bokecc_base_sp.xml中name属性包含“dataJsonXXXX”的一行，把要解密的课程放在第五行。
+解决方案：删除com_bokecc_base_sp.xml中name属性包含“dataJsonXXXX”的所有数据，保留要解密的课程，把要解密的课程放在第五行。
 
 ## 🏗️ 项目结构
 
